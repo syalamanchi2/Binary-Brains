@@ -22,8 +22,8 @@ public class PersonalDetailsActivity extends AppCompatActivity {
         binding.continueTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(PersonalDetailsActivity.this,InsurersListActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(PersonalDetailsActivity.this,InsurersListActivity.class);
+                startActivity(intent);
             }
         });
     }

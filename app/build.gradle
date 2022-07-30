@@ -41,6 +41,9 @@ dependencies {
     implementation 'org.jetbrains:annotations:15.0'
     implementation 'androidx.navigation:navigation-fragment:2.5.0'
     implementation 'androidx.navigation:navigation-ui:2.5.0'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-core'
+    implementation 'com.google.firebase:firebase-storage'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
