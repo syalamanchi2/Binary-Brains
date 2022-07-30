@@ -15,16 +15,17 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.vm.binarybrainsnew.databinding.ActivitySelectAgeBinding;
+import com.vm.binarybrainsnew.databinding.SelectAgeActivityBinding;
 
 public class SelectAgeActivity extends AppCompatActivity {
 
-    private ActivitySelectAgeBinding binding;
+    private SelectAgeActivityBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivitySelectAgeBinding.inflate(getLayoutInflater());
+        binding = SelectAgeActivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.continueTv.setOnClickListener(new View.OnClickListener() {
             @Override

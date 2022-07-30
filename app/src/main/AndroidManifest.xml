@@ -24,6 +24,16 @@
             android:label="@string/title_activity_second"
             android:theme="@style/Theme.BinaryBrainsNew.NoActionBar" />
         <activity
+            android:name=".SelectCityActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BinaryBrainsNew.NoActionBar" />
+        <activity
+            android:name=".PersonalDetailsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_second"
+            android:theme="@style/Theme.BinaryBrainsNew.NoActionBar" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
