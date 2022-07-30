@@ -16,6 +16,13 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".OtpVerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpSendActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
