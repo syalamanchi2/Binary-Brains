@@ -15,4 +15,7 @@
     <color name="Red">#f35023</color>
     <color name="Green">#79d871</color>
     <color name="lightblue">#58cabf</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbar_bgd_color">#154995</color>
 </resources>

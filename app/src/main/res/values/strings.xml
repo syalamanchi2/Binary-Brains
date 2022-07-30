@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">BinaryBrainsNew</string>
+    <string name="term_life_insurance">Term Life Insurance</string>
+    <string name="health_insurance">Health Insurance</string>
+    <string name="car_insurance">Car Insurance</string>
+    <string name="two_wheeler_insurance">Two Wheeler Insurance</string>
+    <string name="family_health_insurance">Family Health Insurance</string>
+    <string name="group_health_insurance">Group_health</string>
+    <string name="home_insurance">Home Insurance</string>
+    <string name="commercial_vehicle_insurance">Commercial Vehicle Insurance</string>
+    <string-array name="insurance_types">
+        <item>@string/term_life_insurance</item>
+        <item>@string/health_insurance</item>
+        <item>@string/car_insurance</item>
+        <item>@string/two_wheeler_insurance</item>
+        <item>@string/family_health_insurance</item>
+        <item>@string/group_health_insurance</item>
+        <item>@string/home_insurance</item>
+        <item>@string/commercial_vehicle_insurance</item>
+    </string-array>
+    <string name="title_activity_second">SecondActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_select_age">SelectAgeActivity</string>
+
 </resources>
