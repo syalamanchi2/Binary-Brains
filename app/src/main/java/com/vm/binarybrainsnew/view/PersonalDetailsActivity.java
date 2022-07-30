@@ -1,13 +1,12 @@
-package com.vm.binarybrainsnew;
+package com.vm.binarybrainsnew.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.vm.binarybrainsnew.databinding.PersonalDetailsBinding;
-import com.vm.binarybrainsnew.databinding.SelectCityBinding;
 
 public class PersonalDetailsActivity extends AppCompatActivity {
 
@@ -24,6 +23,13 @@ public class PersonalDetailsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(PersonalDetailsActivity.this,InsurersListActivity.class);
                 startActivity(intent);
+            }
+        });
+        binding.radioGrp.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton rb=(RadioButton)findViewById(checkedId);
+                System.out.println("LOG:: selected radio button text.."+rb.getText());
             }
         });
     }

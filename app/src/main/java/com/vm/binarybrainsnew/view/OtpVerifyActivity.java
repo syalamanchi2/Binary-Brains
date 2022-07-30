@@ -1,4 +1,4 @@
-package com.vm.binarybrainsnew;
+package com.vm.binarybrainsnew.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,8 +16,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.vm.binarybrainsnew.databinding.ActivityOtpSendBinding;
-import com.vm.binarybrainsnew.databinding.ActivityOtpVerifyBinding;
 
 import org.jetbrains.annotations.NotNull;
 

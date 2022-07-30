@@ -1,13 +1,10 @@
-package com.vm.binarybrainsnew;
+package com.vm.binarybrainsnew.view;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.firebase.database.DataSnapshot;
@@ -16,11 +13,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.vm.binarybrainsnew.databinding.ActivityInsurersListBinding;
-import com.vm.binarybrainsnew.databinding.ActivityMainBinding;
+import com.vm.binarybrainsnew.controller.MainListAdapter;
+import com.vm.binarybrainsnew.model.Root;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class InsurersListActivity extends AppCompatActivity {
     ActivityInsurersListBinding binding;
@@ -41,19 +37,23 @@ public class InsurersListActivity extends AppCompatActivity {
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
+                rootList = new ArrayList<>();
                 for (DataSnapshot positionSnapShot : snapshot.getChildren()) {
                     for(DataSnapshot insurerSnapShot:positionSnapShot.getChildren()){
-                         rootList = new ArrayList<>();
+                        Root root = new Root();
                         for(DataSnapshot dataSnapshot:insurerSnapShot.getChildren()){
-                            Root root = new Root();
                             if(dataSnapshot.getKey().equals("AllowedIllnessLimits")){
-
-                            }else if(dataSnapshot.getKey().equals("Benifts")){
 
                             }else if(dataSnapshot.getKey().equals("InsurerName")){
                                 root.setInsurerName(""+dataSnapshot.getValue());
+                            }else if(dataSnapshot.getKey().equals("PremiumPerMonth")){
+                                root.setPremiumPerMonth(""+dataSnapshot.getValue() + "/Month");
+                            }else if(dataSnapshot.getKey().equals("Rating")){
+                                root.setRating(""+dataSnapshot.getValue().toString());
+                            }else if(dataSnapshot.getKey().equals("YearlyCoverageInLakhs")) {
+                                root.setYearlyCoverageInLakhs("" + dataSnapshot.getValue().toString());
+                                rootList.add(root);
                             }
-                            rootList.add(root);
                         }
                     }
                 }

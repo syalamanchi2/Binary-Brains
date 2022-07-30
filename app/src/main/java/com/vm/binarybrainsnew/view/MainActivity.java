@@ -1,4 +1,4 @@
-package com.vm.binarybrainsnew;
+package com.vm.binarybrainsnew.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -7,7 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.vm.binarybrainsnew.databinding.ActivityMainBinding;
+import com.vm.binarybrainsnew.R;
+import com.vm.binarybrainsnew.controller.RecyclerViewAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

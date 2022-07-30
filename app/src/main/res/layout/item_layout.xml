@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:padding="6dp"
-                    android:text="Best Health Company"
+                    android:text="Health Company First"
                     android:background="@color/lightgreen3"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -92,13 +92,69 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="4dp"
-                    android:text="Best Health Company"
+                    android:text="5 years"
+                    android:textSize="16dp"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/lightgreen2"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="Cost"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cost_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="30/Month"
                     android:textSize="16dp"
                     android:textColor="@color/gray"
                     android:textStyle="bold" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/lightgreen2"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="Rating"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="4.5/5"
+                    android:textSize="16dp"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
        <Button
            android:id="@+id/view_button"
            android:layout_width="wrap_content"

@@ -1,16 +1,16 @@
-package com.vm.binarybrainsnew;
+package com.vm.binarybrainsnew.model;
 
 import java.util.ArrayList;
 
 public class Root{
     private ArrayList<String> allowedIllnessLimits;
     private ArrayList<String> benifits;
-    private boolean allowIllness;
+    private String allowIllness;
     private String insurerName;
     private String premiumPerMonth;
     private String yearlyCoverageInLakhs;
     private String policyPeriod;
-    private double rating;
+    private String rating;
     private String setelmentPercentage;
     private String policyID;
 
@@ -30,11 +30,11 @@ public class Root{
         this.benifits = benifits;
     }
 
-    public boolean isAllowIllness() {
+    public String isAllowIllness() {
         return allowIllness;
     }
 
-    public void setAllowIllness(boolean allowIllness) {
+    public void setAllowIllness(String allowIllness) {
         this.allowIllness = allowIllness;
     }
 
@@ -70,11 +70,11 @@ public class Root{
         this.policyPeriod = policyPeriod;
     }
 
-    public double getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 

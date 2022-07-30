@@ -1,13 +1,10 @@
-package com.vm.binarybrainsnew;
+package com.vm.binarybrainsnew.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.vm.binarybrainsnew.databinding.ActivitySelectAgeBinding;
-import com.vm.binarybrainsnew.databinding.SelectCityBinding;
 
 public class SelectCityActivity extends AppCompatActivity {
 
@@ -23,9 +20,9 @@ public class SelectCityActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SelectCityActivity.this,PersonalDetailsActivity.class);
+                intent.putExtra("City",binding.userAgeEt.getText().toString());
                 startActivity(intent);
             }
         });
     }
-
 }
